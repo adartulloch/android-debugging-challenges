@@ -9,11 +9,11 @@ import java.util.ArrayList;
 public class Movie {
     private String title;
     private String posterUrl;
-    private double rating;
+    private Double rating;
 
     public Movie(JSONObject jsonObject) throws JSONException {
         this.posterUrl = jsonObject.getString("poster_path");
-        this.title = jsonObject.getString("original-title");
+        this.title = jsonObject.getString("original_title");
         this.rating = jsonObject.getDouble("vote_average");
     }
 
@@ -21,7 +21,7 @@ public class Movie {
         return title;
     }
 
-    public double getRating() {
+    public Double getRating() {
         return rating;
     }
 

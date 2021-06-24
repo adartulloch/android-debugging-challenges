@@ -2,6 +2,8 @@ package com.codepath.debuggingchallenges.activities;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
@@ -16,6 +18,7 @@ public class ToolbarActivity extends AppCompatActivity {
 
         // Find the toolbar view inside the activity layout
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Log.d("onCreate", "Toolbar was created");
 
         // Sets the Toolbar to act as the ActionBar for this Activity window.
         // Make sure the toolbar exists in the activity and is not null
